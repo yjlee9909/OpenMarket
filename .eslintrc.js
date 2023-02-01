@@ -11,12 +11,14 @@ module.exports = {
     "plugin:prettier/recommended",
   ],
   rules: {
-    "react/jsx-filename-extension": [
-      "error",
+    "react/function-component-definition": [
+      2,
       {
-        extensions: [".js", ".jsx"],
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
       },
     ],
+    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "no-console": 0,
   },
 };
